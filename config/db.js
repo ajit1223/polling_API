@@ -1,6 +1,11 @@
 const mongoose = require('mongoose');
 
 mongoose.set("strictQuery", false);
+
+
+const dotenv = require("dotenv");
+
+dotenv.config();
 const connectWithDb = () => {
   mongoose
     .connect(process.env.DB_URL, {
