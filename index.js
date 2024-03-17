@@ -1,13 +1,8 @@
 const express = require('express');
-// const connectWithDb = require('./config/db');
-// require('dotenv').config();
+const connectWithDb = require('./config/db');
+require('dotenv').config();
 const app = express();
-// const { PORT } = process.env;
-
-const dotenv = require("dotenv");  //require dotenv package
-dotenv.config({ path: "./config.env" });
-const DB = process.env.DATABASE;
-const PORT = process.env.PORT;
+const { PORT } = process.env;
 
 // for swagger documentation
 const swaggerUi = require('swagger-ui-express');
