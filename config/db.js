@@ -9,7 +9,7 @@ PORT = 8000;
 DB_URL = "mongodb+srv://ajitkumaryadav1223:GLtKU4wrRAtO9BoF@clusterpolling.xnptrib.mongodb.net/?retryWrites=true&w=majority&appName=ClusterPolling";
 
 const connectWithDb = () => {
-  mongoose.connect(process.env.DB_URL, {
+  mongoose.connect(DB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
