@@ -2,7 +2,7 @@ const express = require('express');
 const connectWithDb = require('./config/db');
 require('dotenv').config();
 const app = express();
-const { PORT } = process.env;
+const { PORT } = 8000;
 
 // for swagger documentation
 const swaggerUi = require('swagger-ui-express');
